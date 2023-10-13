@@ -7,6 +7,26 @@
     <!-- EG -->
     <title>EG</title>
     <embed src="01.mp3" volume="0.3" width="200" height="50 hidden="flase" autostart="true" loop preload="auto">
+
+
+    
+    <audio controls id="mymp3" loop="loop"> 
+<source src="01.mp3" type="audio/mpeg"> 
+</audio> 
+
+ <input type="image"  name="btpause"  id="btplay"  img  src="me.png" width="50" height="50"  onClick="document.form1.submit()" >
+ 
+<script> 
+var ebtplay = document.querySelector("#btplay");  
+var emymp3 = document.querySelector("#mymp3");
+ebtplay.onclick = function () { 
+emymp3.play(); 
+}; 
+</script>
+
+    
+
+    
     
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
